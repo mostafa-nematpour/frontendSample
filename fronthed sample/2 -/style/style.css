@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.header {
+    width: 100%;
+    background-color: #EDEDED;
+    height: 80vh;
+    position: relative;
+}
+
+.topheaer {
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lang {
+
+    text-align: right;
+}
+
+
+.logo {
+    text-align: center;
+    line-height: 2;
+}
+
+.icon {
+    text-align: left;
+}
+
+.box {
+    display: inline-block;
+    width: 33%;
+    padding: 10px 0;
+}
+
+.right-box-text p {
+    margin: 20px 5px 30px 5px;
+    line-height: 30px;
+}
+
+.right-box-text {
+
+    display: inline-block;
+    width: 30%;
+}
+
+.glasses {
+    width: 68%;
+    height: auto;
+}
+
+
+
+.header__content {
+    width: 90%;
+    height: 400px;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+
+    padding: 15px 50px;
+    background-color: transparent;
+    color: #008CBA;
+    border: 2px solid #008CBA;
+}
+
+.item-group {
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 2px 8px 1px 8px;
+
+}
+.item-group span {
+font-size: 14px;
+
+}
+
+
+.item-holder {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-list {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.item-group-img {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.item-group-img:hover {
+    cursor: pointer;
+}
+
+.item-group-disabled {
+    color:rgb(179, 179, 179)
+}
+
+.card-holder {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-ul {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.card-li {
+    display: inline-block;
+    margin: 5px;
+    width: 32%;
+    background-color: rgb(235, 235, 235);
+
+}
+
+.card-li img {
+    width: 100%;
+    display: inline-block;
+
+}
+
+
+.specifications-holder {
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+.card-name {
+    width: 48%;
+    display: inline-block;
+}
+
+.card-price {
+    width: 49%;
+    display: inline-block;
+}
+
+.card-name-2 {
+    width: 48%;
+    margin: 0 0 0 3px;
+    font-size: 14px;
+    color: rgb(134, 134, 134);
+}
+
+
+.footer {
+    margin: 80px 0 50px 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.f-item {
+    width: 32%;
+    display: inline-block;
+
+}
+
+.f-item-right {
+    text-align: right;
+}
+
+.f-item-left {
+    text-align: left;
+}
+
+.f-item-center a {
+    color: rgb(1, 103, 255);
+    margin: 0 5px;
+    text-decoration: none;
+
+}
+
+.f-item-right a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(1, 103, 255)
+}
+
+.f-item-left select {
+    width: 40px;
+    color: rgb(1, 103, 255)
+}
