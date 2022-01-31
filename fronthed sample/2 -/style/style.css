@@ -9,13 +9,12 @@
 .header {
     width: 100%;
     background-color: #EDEDED;
-    height: 80vh;
-    position: relative;
+    text-align: center;
 }
 
-.topheaer {
-    height: 100vh;
-    width: 95%;
+.topheader {
+    height: 100px;
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -24,6 +23,15 @@
     text-align: right;
 }
 
+.lang select {
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: auto;
+    height: 80px;
+}
 
 .logo {
     text-align: center;
@@ -38,17 +46,31 @@
     display: inline-block;
     width: 33%;
     padding: 10px 0;
+    vertical-align: top;
+
 }
+
+.lang select {
+    width: 40px;
+    background-color: transparent;
+    color: rgb(105, 105, 105)
+}
+
+
+
 
 .right-box-text p {
     margin: 20px 5px 30px 5px;
     line-height: 30px;
+
 }
 
 .right-box-text {
-
+    text-align: left;   
     display: inline-block;
     width: 30%;
+    vertical-align: top;
+    margin-top:  30px;
 }
 
 .glasses {
@@ -60,13 +82,34 @@
 
 .header__content {
     width: 90%;
-    height: 400px;
     background-color: #EDEDED;
-    position: absolute;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%) */
 }
+
+.header-bottom {
+    width: 80%;
+    margin: 30px auto;
+    padding-bottom: 50px;
+
+}
+.header-bottom-right {
+    display: inline-block;
+    width: 49%;
+    text-align:right;
+}
+.header-bottom-left {
+    display: inline-block;
+    width: 49%;
+    text-align:left;
+}
+
+
+
 
 
 .button {
@@ -90,6 +133,13 @@
     color: #008CBA;
     border: 2px solid #008CBA;
 }
+.button1:hover {
+
+    padding: 15px 50px;
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #008CBA;
+}
 
 .item-group {
     display: inline-block;
@@ -99,8 +149,9 @@
     padding: 2px 8px 1px 8px;
 
 }
+
 .item-group span {
-font-size: 14px;
+    font-size: 14px;
 
 }
 
@@ -127,7 +178,7 @@ font-size: 14px;
 }
 
 .item-group-disabled {
-    color:rgb(179, 179, 179)
+    color: rgb(179, 179, 179)
 }
 
 .card-holder {
@@ -143,6 +194,7 @@ font-size: 14px;
 }
 
 .card-li {
+    cursor: pointer;
     display: inline-block;
     margin: 5px;
     width: 32%;
@@ -219,3 +271,44 @@ font-size: 14px;
     width: 40px;
     color: rgb(1, 103, 255)
 }
+
+
+@media only screen and (max-width: 1388px) {
+    .card-holder {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1082px) {
+    .card-holder {
+        width: 100%;
+        margin: 0 auto;
+    }
+}  
+@media only screen and (max-width: 991px) {
+    .card-holder {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card-li {
+        display: inline-block;
+        margin: 5px;
+        width: 40%;
+        background-color: rgb(235, 235, 235);
+    
+    }
+}   
+
+ @media only screen and (max-width: 660px) {
+    .card-holder {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .card-li {
+        display: inline-block;
+        margin: 5px;
+        width: 100%;
+        background-color: rgb(235, 235, 235);
+    
+    }
+}   
