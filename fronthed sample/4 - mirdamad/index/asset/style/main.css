@@ -18,6 +18,7 @@ div {
 .pointer {
     cursor: pointer;
 }
+
 .pointer:hover {
     cursor: pointer;
 }
@@ -215,11 +216,16 @@ div {
 
 
 .main-holder {
-    width: 90%;
+    width: 80%;
     margin: 40px auto;
 }
 
 /* book-box - start */
+
+.book-box {
+    margin-top: 30px;
+}
+
 .book-box-top {
     display: flex;
     align-items: center;
@@ -246,18 +252,13 @@ div {
     display: block;
     color: #333B3D;
     font-size: 14px;
-    ;
 }
 
 
 .book-slider-container {
     width: 100%;
+    margin-top: 30px;
 }
-
-
-
-
-
 
 .swiper {
     width: 100%;
@@ -287,12 +288,131 @@ div {
 .swiper-slide img {
     display: block;
     width: 100%;
+    max-width: 226px;
     height: 100%;
     object-fit: cover;
 }
 
+.card-name-text {
+    color: #333B3D;
+    font-size: 16px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.book-card-slide {
+    position: relative;
+}
+
+.book-card-slide-hover {
+    background-color: #E48325;
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    transition: 400ms all;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+
+}
+
+.book-card-slide:hover .book-card-slide-hover {
+    opacity: 1;
+}
+
+.book-card-slide-hover span {
+    margin-top: 8px;
+}
 
 /* book-box - end */
-main {
-    height: 1000px;
+
+.baner-container {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.baner-container img {
+    display: inline-block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    transition: all ease 0.5s;
+
+}
+
+.baner-container img:hover {
+    cursor: pointer;
+    width: 95%;
+    filter: drop-shadow(0 10px 5px rgba(150, 150, 150, 0.336));
+}
+
+
+/*  */
+
+.book-creator-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.book-creator-box {
+    width: 48%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.562);
+}
+
+.book-creator-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.book-creator-title-top {
+    margin-right: 20px;
+    color: #333B3D;
+    font-size: 18px;
+}
+
+.book-creator-title {
+    display: flex;
+    align-items: center;
+}
+
+.book-creator-more span {
+    color: #003399;
+    font-size: 14px;
+}
+
+.book-creator-item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.book-creator-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.book-creator-item span {
+    font-size: 13px;
+    margin: 5px auto
 }
