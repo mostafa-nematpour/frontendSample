@@ -1,0 +1,162 @@
+:root {
+    --background-color: #fefefe;
+    --pink: #ca7475;
+    --white: #fff;
+    box-sizing: border-box;
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+
+
+
+.first-header {
+    background-color: blueviolet;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-container {
+    /* margin: 50px 0 0 50px; */
+    height: 50px;
+    display: inline-block;
+    background-color: var(--background-color);
+}
+
+.pagination-number {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black, #000);
+    text-align: center;
+    position: relative;
+    line-height: 39px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--pink);
+    background-color: transparent;
+}
+
+.pagination-number:hover {
+    cursor: pointer;
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+
+.pagination-number-used {
+    color: var(--white);
+    background-color: var(--pink);
+}
+
+.pagination-next-button {
+    color: var(--black, #000);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+}
+
+@keyframes background-color {
+    100% {
+        color: var(--white);
+        background-color: var(--pink);
+    }
+}
+
+
+/* roduct-card */
+
+.product-card-container {
+    width: 250px;
+    height: 450px;
+    background-color: var(--black, black);
+}
+
+.product-card-container img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card-bottom-box {
+    position: relative;
+
+    width: 80%;
+    height: 40%;
+    background-color: red;
+}
+
+/* base */
+.base {
+    margin: auto;
+    width: 70vw;
+    background-color: #555;
+}
+
+/* base */
+
+/* footer */
+footer {
+    background-color: #d6d6d6;
+}
+
+.smaller {
+    margin:  auto;
+    background-color: transparent;
+    width: 70vw;
+
+}
+
+.footer-column {
+    top: 0;
+    width: 22%;
+    display: inline-block;
+    background-color: transparent;
+
+}
+
+.footer-column-title {
+    text-decoration: underline;
+
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    background-color: transparent;
+
+}
+
+
+.footer-column-item {
+    margin-top: 10px;
+    color:rgb(92, 92, 92);
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.copyright {
+    background-color: transparent;
+    color:rgb(92, 92, 92);
+    font-size: 12px;
+}
+/* footer */
