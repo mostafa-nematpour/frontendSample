@@ -10,11 +10,64 @@
     <title>میرداماد | کتابخانه دیجیتال</title>
 </head>
 
-<body>
+<body id="e_body">
+
+
+    <div id='nav_box' class="navbar__rsponsive">
+
+        <div class="nav-box-close">
+            <img class=' pointer' id='close-button' src="asset/image/site-img/close_icon.svg" alt="" height="32">
+        </div>
+        <div class="nav-a-item">
+            <img class='pointer' src="asset/image/site-img/Icon-search.svg" alt="">
+            <img class='pointer' src="asset/image/site-img/Icon-user-circle.svg" alt="">
+
+        </div>
+        <div class="nav-holder">
+            <div class="nav-menu">
+                <div class="nav-menu-item pointer">
+                    <span>کتاب ها</span>
+                    <img src="asset/image/site-img/Icon-arrow-down.svg" alt="">
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>ناشرین</span>
+                    <img src="asset/image/site-img/Icon-arrow-down.svg" alt="">
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>کتاب ها</span>
+                    <img src="asset/image/site-img/Icon-arrow-down.svg" alt="">
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>کتاب های برگزیده</span>
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>ارتباط با ما</span>
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>درباره ما</span>
+                </div>
+                <div class="nav-menu-item pointer">
+                    <span>قوانین و مقررات</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-navigation"></div>
+
     <header>
         <div class="main-header">
             <div class="top-header">
                 <div class="header-item-holder">
+
+                    <div id="menu_icon" class="menu-button pointer">
+                        <img src="asset/image/site-img/Icon-metro-menu.svg" alt="">
+                    </div>
+
+                    <div class="header-ategory pointer">
+                        <span>دسته بندی</span>
+                        <img src="asset/image/site-img/Icon-arrow-down.svg" alt="#">
+                    </div>
 
                     <div class="header-logo pointer">
                         <img src="asset/image/site-img/main-logo.svg" alt="logo">
@@ -31,6 +84,16 @@
                             placeholder="نام یا عنوان کتاب را بنویسید ...">
                         <img class="header-search-icon pointer" src="asset/image/site-img/Icon-search.svg" alt="">
                     </div>
+
+
+                    <div class="header-logo2 pointer">
+                        <img src="asset/image/site-img/main-logo.svg" alt="logo">
+                        <div class="logo-text-container">
+                            <span class="logo-text-top">کتابخانه دیجیتال</span>
+                            <span class="logo-text-bottom">وابسته به موسسه فرهنگی میرداماد</span>
+                        </div>
+                    </div>
+
 
                     <div class="header-account">
                         <a href="">ورود</a>
@@ -64,30 +127,34 @@
 
             <img class="main-header-background" src="asset/image/site-img/header-background.png" alt="" height="300">
 
+
+
+
+
             <div class="header-options">
                 <div class="header-options-container">
-                    <div class="header-option rigth-option">
+                    <div class="header-option first-option">
                         <img src="asset/image/site-img/Icon-collections-bookmark.svg" alt="">
                         <div class="header-option-text-holder">
                             <span class="header-option-text-top">بانک کتاب</span>
                             <span class="header-option-text-bottom">دارای بیش از 185.000 کتاب</span>
                         </div>
                     </div>
-                    <div class="header-option option-right-line center-option">
+                    <div class="header-option second-option">
                         <img src="asset/image/site-img/Icon-users.svg" alt="">
                         <div class="header-option-text-holder">
                             <span class="header-option-text-top">تیم کتاب بانک</span>
                             <span class="header-option-text-bottom">دارای بیش از 185.000 کتاب</span>
                         </div>
                     </div>
-                    <div class="header-option option-right-line center-option">
+                    <div class="header-option third-option">
                         <img src="asset/image/site-img/Icon-map.svg" alt="">
                         <div class="header-option-text-holder">
                             <span class="header-option-text-top">محدوده ارسال</span>
                             <span class="header-option-text-bottom">دارای بیش از 185.000 کتاب</span>
                         </div>
                     </div>
-                    <div class="header-option option-right-line left-option">
+                    <div class="header-option fourth-option">
                         <img src="asset/image/site-img/Icon-shuttle-van.svg" alt="">
                         <div class="header-option-text-holder">
                             <span class="header-option-text-top">ارسال رایگان برای گرگان</span>
@@ -98,6 +165,10 @@
             </div>
         </div>
     </header>
+
+
+
+
 
     <main>
 
@@ -268,13 +339,17 @@
                             alt="">
                     </div>
                 </div>
+
+                <div class="button-container pointer">
+                   <span>مشاهده همه کتاب ها</span>
+                </div>
             </div>
 
             <div class="baner-container">
                 <img src="asset/image/b1.png" alt="بنر اول" loading="lazy">
             </div>
 
-            
+
             <div class="book-box">
                 <div class="book-box-top">
                     <div class="book-box-title">
@@ -1266,7 +1341,7 @@
                             alt="">
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="baner-container">
                 <img src="asset/image/b4.png" alt="بنر دوم" loading="lazy">
@@ -1374,7 +1449,105 @@
         </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="top-footer">
+            <div class='email-background'>
+                <!-- <img  class="footer__image" src="assets/img/top-footer.svg" alt=""> -->
+                <div class="footer-form-container">
+                    <form action="">
+                        <input class='input-email' type="email" id="email" name="email"
+                            placeholder="جهت عضویت در خبرنامه کتاب بانک ایمیل خود را وارد کنید!" required>
+                        <input class='submit-email' type="submit" value="عضویت در خبرنامه">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="middle-footer">
+            <div class="footer-quick-access quick-access1 f-box">
+                <span>حساب کاربری</span>
+                <ul>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">ورود</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">ثبت نام</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">حساب من</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">علاقه مندی ها</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">جستجوی پیشرفته</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-about f-box">
+                <div class="footer-logo-main">
+                    <img src="asset/image/site-img/logo-blue.svg" alt="logo">
+                    <div class="footer-logo-text-container">
+                        <span class="footer-logo-text-top">کتابخانه دیجیتال</span>
+                        <span class="footer-logo-text-bottom">وابسته به موسسه فرهنگی میرداماد</span>
+                    </div>
+                </div>
+                <p>
+                    در فـرصـت‌های انـدک مـیان هیاهـوی روزانـه، زمانـی که می‌شــود اسـتراحـت کوتـاهـی کرد، یک فنجان چای
+                    نوشید وبه موسیقی دلخواه خود گوش کرد.زمانیـست که می‌شـود در فضای مجـازی گشـتی زد، اخـبــار روز را
+                    مــرور کـرد و بر روی عکــس‌ها و حــرف‌های دوسـتـان نــظر داد. زمانیـست که می‌تـوان وارد ایـن
+                    وبســایت شــدو کتابـی را مطالعه کرد. حـال دیگـر این نـوای موسیـقی و عطــر چای شـمـاست کـه بـه وبسایت
+                    کتاب ما حا و هوایی دیگر می‌دهد.
+                </p>
+                <a class='footer-about-more-link' href="">مشاهده بیشتر</a>
+                <div class="footer-communication">
+                    <div class='footer-communication-social'>
+                        <a href=""><img src="asset/image/site-img/Icon-whatsapp.svg" alt=""></a>
+                        <a href=""><img src="asset/image/site-img/Icon-telegram.svg" alt=""></a>
+                        <a href=""><img src="asset/image/site-img/Icon-twitter.svg" alt=""></a>
+                        <a href=""><img src="asset/image/site-img/Icon-instagram.svg" alt=""></a>
+                    </div>
+                    <div class='footer-communication-phone'>
+                        <span>09114088376</span>
+                        <span> - </span>
+                        <span>09114088376</span>
+                        <img src="asset/image/site-img/Icon-phone-call.svg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="footer-quick-access quick-access2  f-box">
+                <span>حساب کاربری</span>
+                <ul>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">ورود</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">ثبت نام</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">حساب من</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">علاقه مندی ها</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">جستجوی پیشرفته</a></li>
+                </ul>
+            </div>
+            <div class="footer-quick-access f-box">
+                <span>دسترسی سریع</span>
+                <ul>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">قوانین و مقررات</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">سوالات متداول</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">پشتیبانی</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">درباره ما</a></li>
+                    <li><img src="asset/image/site-img/Icon-node-dot-js.svg" alt=""><a href="">تماس با ما</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr class='line'>
+        </div>
+        <div class="fotter-bottom">
+            <div class="copyright-text">
+                <span>کلیه حقوق سایت به کتابخانه دیجیتال میرداماد تعلق دارد و کپی برداری از آن ممنوع می باشد.</span>
+            </div>
+            <div class="copyright-text">
+                <span>
+                    Copyright 2021 mirdamad.com Designed By shetabit | All rights reserved
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+
 
     <script src="asset/script/siwper-main.js"></script>
 
@@ -1398,7 +1571,7 @@
                     spaceBetween: 10,
                 },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 15,
                 },
                 768: {
@@ -1413,6 +1586,48 @@
         });
     </script>
 
+
+    <script>
+
+        var menu = document.getElementById('menu_icon');
+        menu.onclick = function () {
+            var nav = document.getElementById('nav_box');
+
+            nav.style.display = "inline";
+            setTimeout(() => {
+                nav.style.opacity = 1
+            })
+
+            
+            document.getElementById("e_body").style.overflowY = "hidden";
+
+        };
+
+        var close = document.getElementById('close-button');
+        close.onclick = function () {
+            var nav = document.getElementById('nav_box');
+            nav.style.opacity = 0
+            setTimeout(function () {
+                nav.style.display = "none";
+
+            }, 300)
+            document.getElementById("e_body").style.overflowY = "";
+
+        };
+
+
+
+        // var x = window.matchMedia("(min-width: 1210px)")
+        // x.addListener(function (e) {
+        //     var nav = document.getElementById('nav_box');
+        //     nav.style.opacity = 0
+        //     setTimeout(function () {
+        //         nav.style.display = "none";
+
+        //     }, 300)
+
+        // })
+    </script>
 </body>
 
 </html>
