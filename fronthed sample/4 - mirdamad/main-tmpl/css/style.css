@@ -444,7 +444,11 @@ body {
 }
 
 
+/* 
 
+
+
+*/
 
 
 
@@ -502,15 +506,7 @@ body {
 
 /* for footer */
 @media only screen and (max-width: 1100px) {
-    .middle-footer {
-        width: 98%;
-        display: inline-block;
-    }
-
-    .email-background {
-        width: 90%;
-    }
-
+ 
 
 }
 
