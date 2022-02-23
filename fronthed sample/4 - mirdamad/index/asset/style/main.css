@@ -451,7 +451,7 @@ div {
 .button-container {
     display: none;
     width: 80%;
-    padding: 10px 0;
+    padding: 8px 0;
     background-color: #E48325;
     text-align: center;
     vertical-align: middle;
@@ -460,7 +460,7 @@ div {
 
 .button-container span {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* footer - start */
@@ -679,6 +679,7 @@ footer {
 .fotter-bottom span {
     color: #707070;
     font-size: 11px;
+    font-size: nav-box-close 11px;
 }
 
 /* footer - end */
@@ -686,50 +687,6 @@ footer {
 
 /* responsive */
 
-.navbar__rsponsive {
-    display: none;
-    opacity: 0;
-    max-width: 100%;
-    width: 400px;
-    height: 100%;
-    background-color: rgb(247, 247, 247);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10 !important;
-    transition: 300ms all;
-}
-
-.nav-box-close {
-    text-align: left;
-    padding: 20px 0 0 20px;
-}
-
-.nav-box-close img {
-    width: 32px;
-    height: auto;
-}
-
-.nav-holder {
-    margin: 20px 5px 0 5px;
-}
-
-.nav-menu-item {
-    margin: 15px 5px 10px 5px;
-}
-
-.nav-a-item {
-    text-align: center;
-}
-
-.nav-menu-item span {
-    font-size: 18px;
-}
-
-.nav-a-item img {
-    padding: 10px;
-    margin: 10px;
-}
 
 .menu-button {
     background-color: #fff;
@@ -1005,6 +962,137 @@ body nav.tab .bar .middle .side {
 
 /* mobile footer */
 
+/* nav bar - start */
+
+.navbar__rsponsive {
+    overflow-y: auto;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    max-width: 100%;
+    width: 400px;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10 !important;
+    transition: 300ms all;
+}
+
+.nav-box-close {
+    text-align: left;
+    padding: 20px 0 0 20px;
+}
+
+.nav-box-close img {
+    width: 32px;
+    height: auto;
+}
+
+.nav-holder {
+    margin: 20px 5px 0 5px;
+}
+
+.nav-menu-item {
+    margin: 40px 15px 0 0;
+    align-items: center;
+    display: flex;
+}
+
+.nav-menu-item img {
+    margin-left: 30px;
+    width: 28px;
+    height: auto;
+}
+
+
+.nav-a-item {
+    text-align: center;
+}
+
+.nav-menu-item span {
+    font-size: 18px;
+}
+
+.nav-a-item img {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.nav-box-head {
+    position: relative;
+}
+
+.nav-box-close-img {
+    width: 24px;
+    padding: 4px;
+    height: auto;
+
+}
+
+.nav-box-head-background {
+    width: 100%;
+    height: 200px;
+}
+
+.nav-box-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-box-head-logo {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-box-head-logo2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-box-head-text-container {
+    margin: 0 4px 0 0;
+}
+
+.logo-text-container {
+    display: inline-block;
+}
+
+.nav-box-logo-text-bottom {
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    text-align: left;
+}
+
+.nav-box-logo-text-top {
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    text-align: left;
+}
+
+.nav-box-head-logo img {
+    width: 30%;
+    margin: 0 5px;
+}
+
+.nav-box-head-line {
+    display: inline-block;
+    border-top: 7px solid #E48325;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+
+/* nav bar - end */
+
 
 @media only screen and (max-width: 1540px) {
     .footer-about-more-link {
@@ -1253,7 +1341,7 @@ body nav.tab .bar .middle .side {
         padding-right: 10px;
     }
 
-    .card-name-text{
+    .card-name-text {
         font-size: 12px;
     }
 
@@ -1294,7 +1382,7 @@ body nav.tab .bar .middle .side {
     }
 
     .button-navigation {
-    display: block;
+        display: block;
     }
 }
 
