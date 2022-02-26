@@ -721,7 +721,7 @@ body nav.tab.moving .icon {
 }
 
 body nav.tab[data-selected="1"] .icon:nth-child(1), body nav.tab[data-selected="2"] .icon:nth-child(2), body nav.tab[data-selected="3"] .icon:nth-child(3) {
-    top: -1.5rem;
+    top: -1.3rem;
     color: #2ABA66;
     font-size: 2rem;
     transition: 0.25s 0.375s;
@@ -1169,7 +1169,7 @@ body nav.tab .bar .middle .side {
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
 
     .middle-footer {
         width: 98%;
@@ -1266,6 +1266,14 @@ body nav.tab .bar .middle .side {
         display: flex;
         border-radius: 10px;
         width: 80%;
+        padding-left: 10px;
+        outline: none;
+    }
+
+
+    .header-ategory option {
+        margin-top: 20px;
+
     }
 
     .header-search {
