@@ -13,6 +13,14 @@ body {
     font-family: tahoma, serif;
     line-height: 1.6;
     background: #d0d0d0;
+    transition: transform .2s;
+    /* transform: translate3d(15em, 0, 0); */
+    /* overflow: hidden; */
+}
+
+body.show-menu {
+    transform: translate3d(15em, 0, 0);
+    overflow: hidden;
 }
 
 .inner-container {
@@ -53,11 +61,50 @@ body {
     padding: 1em;
 }
 
+.nav-toggle {
+    font-size: 1.3em;
+    float: left;
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+    transition: transform .2s;
+}
+
+@media (min-width: 48em) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+
+.nav-toggle.is-active {
+    transform: rotate(90deg);
+}
 
 .nav {
-    float: left;
-    padding-left: 1em;
+    position: fixed;
+    top: 0;
+    left: -15em;
+    width: 15em;
+    background: #1b1b1b;
+    height: 100vh;
+    overflow: auto;
+
+
 }
+
+@media (min-width: 48em) {
+    .nav {
+        width: auto;
+        overflow: visible;
+        height: auto;
+        position: static;
+        float: left;
+        padding-left: 1em;
+        background: none;
+    }
+}
+
 
 .nav__menu {
     padding: 0;
@@ -66,39 +113,75 @@ body {
 }
 
 .nav__item {
-    float: left;
     list-style-type: none;
     position: relative;
+}
+
+@media (min-width: 48em) {
+    .nav__item {
+        float: left;
+
+    }
 }
 
 .nav__link {
     display: block;
     padding: 1.2em 1em 1.5em;
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 255, 255);
     border-top: .3em solid transparent;
     white-space: nowrap;
 }
-.has-sub:hover > .nav__link,
+
+@media (min-width: 48em) {
+    .nav__link {
+        color: #333;
+    }
+}
+
+
+.has-sub:hover>.nav__link,
 .nav__link:hover {
     border-top-color: cornflowerblue;
 }
 
+
 .nav__sub {
     padding: 0;
     margin: 0;
-    position: absolute;
-    left: 0;
-    background-color: #fff;
-    top: 100%;
-    opacity: 0;
-    transition: .2s opacity;
-    pointer-events: none;
+    display: none;
+    margin-top: .5em;
 }
 
-.has-sub:hover .nav__sub {
-    opacity: 1;
-    pointer-events: auto;
+.sub-icon {
+    float: right;
+}
+
+@media (min-width: 48em) {
+    .sub-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 48em) {
+    .nav__sub {
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        top: 100%;
+        opacity: 0;
+        transition: .2s opacity;
+        pointer-events: none;
+    }
+
+    .has-sub:hover .nav__sub {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 }
 
 .nav__sub-item {
