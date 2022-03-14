@@ -36,13 +36,6 @@ html {
     --gray6-color: #e6e6e6;
 }
 
-img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
 
 span, img {
 
@@ -303,10 +296,12 @@ main {
     margin-top: 50px;
     margin-bottom: 30px;
     display: block;
+    margin-right: 15px
 }
 
 .main_categories_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 80px;
@@ -322,7 +317,6 @@ main {
 }
 
 .main_categories_base_item {
-    width: 190px;
     margin: 15px 10px;
 }
 
@@ -401,7 +395,6 @@ main {
 
 /* swiper-slide - start */
 
-.main_slider_container {}
 
 .slider_card_container {
     background-color: rgb(255, 255, 255);
@@ -746,7 +739,7 @@ main {
 
 .main_business {
     position: relative;
-    margin: 15.0625rem auto;
+    margin: 15.0625rem auto 5rem auto;
     width: 85%;
     padding: 3rem;
     background-color: rgb(249, 250, 251);
@@ -798,15 +791,20 @@ main {
     padding: 10px 5px;
     justify-content: center;
     border-radius: 8px;
-    transition: all 0.5s;
+    transition: background-color 0.5s;
     margin-top: 40px;
 }
 
 
 .main_business_button:hover {
-    background-color: #a7006c;
-
+    background-color: #eb3fae;
 }
+
+
+.main_business_button:active {
+    background-color: #c40882;
+}
+
 
 .main_business_button span {
     color: #fff;
@@ -814,3 +812,164 @@ main {
 }
 
 /* main - end */
+
+button {
+    transition: background-color 0.5s;
+
+}
+
+button:active {
+    background-color: #dd4814;
+
+}
+
+
+/* footer - start */
+
+.top_footer_holder {
+    border-top: 0.0625rem solid rgb(235, 237, 240);
+}
+
+.top_footer_holder {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top_footer_city_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.snapiniran {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(58, 61, 66);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.top_footer_city_holder {
+    width: 8%;
+    margin-top: 7px;
+}
+
+.top_footer_city {
+    color: rgb(166, 170, 173);
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+}
+
+.main_footer {
+    background-color: rgb(249, 250, 251);
+    padding-top: 50px;
+
+}
+
+.main_footer_container {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.footer_social_icon_holder{
+    background-color: #fff;
+    box-shadow: rgb(58 61 66 / 20%) 0px 1px 0px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.footer_social_icon_holder a{
+    width: 40px;
+    height: 40px;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_social_container{
+    display:flex;
+    justify-content:center;
+}
+.footer_link {
+    flex-grow: 1;
+}
+
+.footer_a1 {
+    flex-grow: 1;
+}
+
+.footer_a2 {
+    flex-grow: 1;
+}
+
+.footer_hamta {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+}
+
+.footer_link_text_container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer_link_icon_holder {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_link_text_title {
+    width: 100%;
+    font-family: snnapr;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0px;
+    display: inline-block;
+    color: rgb(255, 0, 166);
+    text-align: initial;
+}
+
+.footer_link_text_main {
+    display: block;
+
+    font-family: ianssans;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    display: inline-block;
+    color: rgb(83, 86, 92);
+    text-align: initial;
+}
+
+.footer_a1_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_a1_a {
+    margin: 0.5rem;
+
+}
+
+.footer_a1_a p {
+    font-family: ianssans;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    display: inline-block;
+    color: rgb(96, 98, 102);
+    text-align: initial;
+}
+
+
+
+/* footer - end */
