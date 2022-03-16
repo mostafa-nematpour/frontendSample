@@ -218,7 +218,14 @@ header {
 
 .top-header-ac-sh {
     display: none;
+    padding: 0 1rem;
 }
+
+.top-header-ac-sh a {
+    margin-right: 1.6rem;
+
+}
+
 
 .top-header-store {
     display: flex;
@@ -344,19 +351,22 @@ main {
 
 .main-container {
     display: flex;
-    align-items: start;
+}
+
+.p-sticky {
+    position: sticky;
+    top: 6rem;
+
 }
 
 .main-menu-item {
     padding: 0 1rem;
-    position: sticky;
     top: 0px;
     -webkit-box-flex: initial;
     flex-grow: initial;
     flex-basis: 25%;
     max-width: 25%;
     min-width: initial;
-    top: 6rem;
 
 }
 
@@ -696,7 +706,7 @@ main {
     align-items: center;
 }
 
-.main-detial-first1{
+.main-detial-first1 {
     font-family: iransans;
     font-weight: 400;
     font-size: 0.75rem;
@@ -712,7 +722,7 @@ main {
 }
 
 .sabad-kharid {
-    font-family: iransans ;
+    font-family: iransans;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -726,17 +736,17 @@ main {
     margin-top: 1.5rem;
 }
 
-.detial2{
+.detial2 {
     margin-top: 0.5rem;
     padding-top: 3rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 2rem;
 
 }
 
-.main-detial-first111{
+.main-detial-first111 {
     font-weight: 700;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -903,3 +913,55 @@ main {
 
 
 /* footer - end */
+
+
+@media only screen and (max-width: 960px) {
+    .header-login {
+        display: none;
+    }
+
+    .top-header-ac-sh {
+        display: block;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    .main-menu-item {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+
+    .main-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .main-detial {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top_header_logo {
+        display: none;
+    }
+
+    .main-menu-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .main-data {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}
